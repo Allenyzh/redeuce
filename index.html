@@ -1,65 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Redeuce – Eco Tennis Reinvented</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-  <header>
-    <div class="nav">
-      <div class="logo">
-        <img src="./assets/logo.png" id="logo_redeuce" alt="Redeuce Logo" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redeuce – Eco Tennis Reinvented</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/10b608cae2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="sticky top-0 z-50">
+      <div id="navbar-placeholder"></div>
+    </header>
+
+    <div class="hero bg-base-200 min-h-screen">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">
+            Meet <span class="text-[#1e7d2d]">Redeuce</span>
+          </h1>
+          <div
+            class="py-6 flex flex-col gap-2 items-center text-[#1e7d2d] italic"
+          >
+            <p>
+              ReDeuce™ is an innovative, eco-conscious tennis ball engineered to
+              deliver professional-level performance while eliminating
+              end-of-life waste. Designed with sustainability at its core,
+              ReDeuce™ is made entirely from recyclable, non-toxic materials,
+              offering athletes and recreational players a guilt-free way to
+              enjoy the game they love.
+            </p>
+
+            <p>
+              Traditional tennis balls are composed of synthetic rubber and
+              mixed-material felt, which are difficult—if not impossible—to
+              recycle. As a result, over 125 million tennis balls are discarded
+              annually in North America alone, often ending up in landfills.
+              ReDeuce™ reimagines the tennis ball using monomaterial or
+              compatible recyclable components, such as thermoplastic elastomers
+              (TPE) for the core and recycled PET-based felt for the outer
+              layer. The result is a high-performance, pressurized ball that
+              meets playing standards and can be fully processed through
+              standard recycling streams.
+            </p>
+
+            <p>
+              In addition to reducing waste, ReDeuce™ promotes a closed-loop
+              production model, where used balls can be returned, reprocessed,
+              and remanufactured into new ones, offering clubs, schools, and
+              leagues a sustainable alternative that does not compromise
+              quality.
+            </p>
+          </div>
+          <button class="btn btn-success"><a href="#buy">Order Now</a></button>
+        </div>
       </div>
-      <nav>
-        <a href="#features">Features</a>
-        <a href="#impact">Impact</a>
-        <a href="#buy">Buy</a>
-      </nav>
     </div>
-  </header>
 
-  <section class="hero">
-    <h1>Meet <span>Redeuce</span></h1>
-    <p>Where performance meets sustainability.<br>Reusable. Durable. Game-changing.</p>
-    <a href="#buy" class="cta">Order Now</a>
-  </section>
+    <section
+      id="features"
+      class="features bg-base-100 flex flex-col justify-center content-center gap-4 py-12"
+    >
+      <div class="text-3xl font-bold mx-auto text-[#1e7d2d]">Why Redeuce?</div>
+      <div class="flex gap-6 justify-center">
+        <div class="card w-96 bg-base-100 card-lg shadow-sm">
+          <div class="card-body">
+            <h2 class="card-title">Reusable Core</h2>
+            <p>Designed to last over 3x longer than standard tennis balls.</p>
+            <div class="justify-end card-actions">
+              <button class="btn btn-success">Learn More</button>
+            </div>
+          </div>
+        </div>
 
-  <section id="features" class="features">
-    <h2>Why Redeuce?</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Reusable Core</h3>
-        <p>Designed to last over 3x longer than standard tennis balls.</p>
+        <div class="card w-96 bg-base-100 card-lg shadow-sm">
+          <div class="card-body">
+            <h2 class="card-title">Eco Felt Wrap</h2>
+            <p>Biodegradable felt sleeves that can be replaced, not wasted.</p>
+            <div class="justify-end card-actions">
+              <button class="btn btn-success">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card w-96 bg-base-100 card-lg shadow-sm">
+          <div class="card-body">
+            <h2 class="card-title">Pro-Level Bounce</h2>
+            <p>
+              Tested by athletes. Engineered for consistency on every court.
+            </p>
+            <div class="justify-end card-actions">
+              <button class="btn btn-success">Learn More</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h3>Eco Felt Wrap</h3>
-        <p>Biodegradable felt sleeves that can be replaced, not wasted.</p>
+    </section>
+
+    <section
+      id="impact"
+      class="impact flex flex-col justify-center content-center py-12 bg-[#1e7d2d]"
+    >
+      <h2 class="text-3xl font-bold mx-auto text-white mb-4">
+        Play Sustainably
+      </h2>
+      <p class="text-lg mx-auto text-white">
+        Every Redeuce ball prevents over 200g of non-biodegradable rubber and
+        felt from entering landfills.
+      </p>
+      <p class="text-md mx-auto text-white">
+        <strong>40-40 is not just a score. It's a turning point.</strong>
+      </p>
+    </section>
+
+    <section
+      id="buy"
+      class="buy flex flex-col bg-base-100 justify-center content-center py-12"
+    >
+      <h2 class="text-3xl font-bold mx-auto text-[#1e7d2d]">Get Redeuce</h2>
+      <p class="text-xl font-bold mx-auto">
+        Available now starting at <strong>$19.99</strong>
+      </p>
+      <div class="flex justify-center mt-4">
+        <button class="btn btn-success" onclick="alert('Coming soon!')">
+          Pre-Order
+        </button>
       </div>
-      <div class="card">
-        <h3>Pro-Level Bounce</h3>
-        <p>Tested by athletes. Engineered for consistency on every court.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="impact" class="impact">
-    <h2>Play Sustainably</h2>
-    <p>Every Redeuce ball prevents over 200g of non-biodegradable rubber and felt from entering landfills.</p>
-    <p><strong>40-40 is not just a score. It's a turning point.</strong></p>
-  </section>
+    <section id="footer-placeholder"></section>
 
-  <section id="buy" class="buy">
-    <h2>Get Redeuce</h2>
-    <p>Available now starting at <strong>$19.99</strong></p>
-    <button onclick="alert('Coming soon!')">Pre-Order</button>
-  </section>
-
-  <footer>
-    <p>© 2025 Redeuce. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
