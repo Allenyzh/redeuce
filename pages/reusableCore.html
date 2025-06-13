@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReDeuce Blog - Reusable Core</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.0.0/dist/full.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1e7d2d",
+              accent: "#00c08b",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-base-100 text-base-content">
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50">
+      <div id="navbar-placeholder">
+        <div class="bg-white/10 backdrop-blur-sm navbar shadow-sm">
+          <div class="navbar-start">
+            <div class="block md:hidden">
+              <div class="dropdown">
+                <div
+                  tabindex="0"
+                  role="button"
+                  class="btn btn-ghost btn-circle"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h7"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-md dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                >
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="./blog.html">Blog</a></li>
+                  <li><a href="../index.html#buy">Buy</a></li>
+                </ul>
+              </div>
+            </div>
+            <img
+              src="../assets/logo.png"
+              class="md:block hidden max-h-[90px] ml-[-70px] my-[-10px]"
+              alt="redeuce-logo"
+            />
+          </div>
+          <div class="navbar-center">
+            <img
+              src="../assets/logo.png"
+              class="block md:hidden max-h-[90px] my-[-10px]"
+              alt="redeuce-logo"
+            />
+          </div>
+          <div class="navbar-end">
+            <div class="hidden md:block">
+              <ul class="menu menu-horizontal p-0">
+                <li>
+                  <a
+                    href="../index.html"
+                    class="text-lg font-semibold text-[#1e7d2d]"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="./blog.html" class="text-lg font-semibold text-[#1e7d2d]"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a href="../index.html#buy" class="text-lg font-semibold text-[#1e7d2d]"
+                    >Buy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Blog Header -->
+    <header class="max-w-4xl mx-auto text-center py-12 px-4">
+      <h1 class="text-4xl font-bold text-primary mb-4">
+        Reusable Core — The Heart of Sustainable Performance
+      </h1>
+      <p class="text-gray-500">Published June 12, 2025 • by ReDeuce Team</p>
+    </header>
+
+    <!-- Blog Image -->
+    <div class="max-w-4xl mx-auto px-4">
+      <img
+        src="https://source.unsplash.com/800x400/?tennis,ball"
+        alt="Reusable Tennis Ball"
+        class="rounded-lg shadow-md mb-8 w-full"
+      />
+    </div>
+
+    <!-- Blog Content -->
+    <main class="max-w-4xl mx-auto px-4 text-lg leading-relaxed space-y-6">
+      <p>
+        At ReDeuce™, we believe performance and sustainability should go hand in
+        hand. Our innovative tennis ball core is engineered to last over
+        <strong>3x longer</strong> than standard balls, dramatically reducing
+        waste without sacrificing bounce, control, or feel.
+      </p>
+
+      <p>
+        Traditional tennis balls degrade quickly — not only does that shorten
+        their lifespan, but it also contributes to the 300 million tennis balls
+        that end up in landfills every year. Our
+        <span class="text-primary font-medium">reusable core</span> is designed
+        with durable, recyclable materials that retain their shape and
+        elasticity over time.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-primary mt-8">
+        Engineered for Durability
+      </h2>
+      <p>
+        Through rigorous testing with athletes and coaches, the ReDeuce core has
+        shown exceptional resistance to pressure loss and cracking, even after
+        hours of intense play. Whether on clay, grass, or hard court, the
+        performance remains consistent.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-primary mt-8">
+        Environmental Impact
+      </h2>
+      <p>
+        Every ReDeuce ball prevents over <strong>200g</strong> of
+        non-biodegradable rubber from being discarded. Multiply that by hundreds
+        of players, and the impact becomes massive. Our core technology supports
+        a closed-loop model: old balls are returned, reprocessed, and
+        re-manufactured — no waste, no compromise.
+      </p>
+
+      <p>Join us in making tennis more sustainable — one bounce at a time.</p>
+
+      <!-- Call to Action -->
+      <div class="mt-10">
+        <a
+          href="../index.html"
+          class="btn bg-accent text-white hover:bg-green-600"
+          >← Back to Home</a
+        >
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-6 mt-16">
+      <p class="text-lg font-semibold">Play Sustainably</p>
+      <p>
+        ReDeuce helps reduce landfill waste while enhancing the sport we love.
+      </p>
+    </footer>
+  </body>
+</html>

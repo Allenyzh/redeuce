@@ -5,12 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Redeuce – Eco Tennis Reinvented</title>
     <link rel="stylesheet" href="style.css" />
-    
+
     <!-- Favicon start -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_logosc/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_logosc/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_logosc/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon_logosc/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon_logosc/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon_logosc/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon_logosc/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon_logosc/site.webmanifest" />
     <!-- Favicon end -->
 
     <script
@@ -30,6 +44,7 @@
     ></script>
   </head>
   <body>
+    <!-- Navbar -->
     <header class="sticky top-0 z-50">
       <div id="navbar-placeholder">
         <div class="bg-white/10 backdrop-blur-sm navbar shadow-sm">
@@ -60,9 +75,9 @@
                   tabindex="0"
                   class="menu menu-md dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
                 >
-                  <li><a>Features</a></li>
-                  <li><a>Impact</a></li>
-                  <li><a>Buy</a></li>
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./pages/blog.html">Blog</a></li>
+                  <li><a href="./index.html#buy">Buy</a></li>
                 </ul>
               </div>
             </div>
@@ -84,18 +99,22 @@
               <ul class="menu menu-horizontal p-0">
                 <li>
                   <a
-                    href="#features"
+                    href="./index.html"
                     class="text-lg font-semibold text-[#1e7d2d]"
-                    >Features</a
+                    >Home</a
                   >
                 </li>
                 <li>
-                  <a href="#impact" class="text-lg font-semibold text-[#1e7d2d]"
-                    >Impact</a
+                  <a
+                    href="./pages/blog.html"
+                    class="text-lg font-semibold text-[#1e7d2d]"
+                    >Blog</a
                   >
                 </li>
                 <li>
-                  <a href="#buy" class="text-lg font-semibold text-[#1e7d2d]"
+                  <a
+                    href="./index.html#buy"
+                    class="text-lg font-semibold text-[#1e7d2d]"
                     >Buy</a
                   >
                 </li>
@@ -124,7 +143,7 @@
               enjoy the game they love.
             </p>
 
-            <p>
+            <!-- <p>
               Traditional tennis balls are composed of synthetic rubber and
               mixed-material felt, which are difficult—if not impossible—to
               recycle. As a result, over 125 million tennis balls are discarded
@@ -135,7 +154,7 @@
               layer. The result is a high-performance, pressurized ball that
               meets playing standards and can be fully processed through
               standard recycling streams.
-            </p>
+            </p> -->
 
             <p>
               In addition to reducing waste, ReDeuce™ promotes a closed-loop
@@ -155,8 +174,11 @@
       class="features bg-base-100 flex flex-col justify-center content-center gap-4 py-12"
     >
       <div class="text-3xl font-bold mx-auto text-[#1e7d2d]">Why Redeuce?</div>
-      <div class="flex gap-6 justify-center">
-        <div class="card w-96 bg-base-100 card-lg shadow-sm">
+
+      <div
+        class="flex gap-6 justify-center content-center my-auto md:flex-row md:px-16 px-8 flex-col"
+      >
+        <div class="card w-96 bg-base-100 card-lg shadow-sm w-full">
           <div class="card-body">
             <h2 class="card-title">Reusable Core</h2>
             <p>Designed to last over 3x longer than standard tennis balls.</p>
@@ -166,7 +188,7 @@
           </div>
         </div>
 
-        <div class="card w-96 bg-base-100 card-lg shadow-sm">
+        <div class="card w-96 bg-base-100 card-lg shadow-sm w-full">
           <div class="card-body">
             <h2 class="card-title">Eco Felt Wrap</h2>
             <p>Biodegradable felt sleeves that can be replaced, not wasted.</p>
@@ -176,7 +198,7 @@
           </div>
         </div>
 
-        <div class="card w-96 bg-base-100 card-lg shadow-sm">
+        <div class="card w-96 bg-base-100 card-lg shadow-sm w-full">
           <div class="card-body">
             <h2 class="card-title">Pro-Level Bounce</h2>
             <p>
@@ -192,7 +214,7 @@
 
     <section
       id="impact"
-      class="impact flex flex-col justify-center content-center py-12 bg-[#1e7d2d]"
+      class="impact flex flex-col justify-center content-center py-12 bg-[#1e7d2d] px-8 md:px-16"
     >
       <h2 class="text-3xl font-bold mx-auto text-white mb-4">
         Play Sustainably
@@ -208,47 +230,65 @@
 
     <section
       id="buy"
-      class="buy flex flex-col bg-base-100 justify-center content-center py-12"
+      class="buy flex flex-col bg-base-100 justify-center content-center py-40"
     >
       <h2 class="text-3xl font-bold mx-auto text-[#1e7d2d]">Get Redeuce</h2>
       <p class="text-xl font-bold mx-auto">
         Available now starting at <strong>$19.99</strong>
       </p>
       <div class="flex justify-center mt-4">
-        <button class="btn btn-success" onclick="alert('Coming soon!')">
+        <!-- <button class="btn btn-success" onclick="alert('Coming soon!')">
+          Pre-Order
+        </button> -->
+        <!-- You can open the modal using ID.showModal() method -->
+        <button class="btn btn-success" onclick="my_modal_4.showModal()">
           Pre-Order
         </button>
+        <dialog id="my_modal_4" class="modal">
+          <div class="modal-box w-11/12 max-w-5xl">
+            <h3 class="text-lg font-bold text-[#1e7d2d]">
+              REDEUCE<sup>TM</sup>
+            </h3>
+            <p class="py-4">Coming Soon!</p>
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button, it will close the modal -->
+                <button class="btn">Close</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
       </div>
     </section>
 
-    <section id="footer-placeholder">
-      <footer
-        class="footer sm:footer-horizontal bg-base-200 text-[#1e7d2d] items-center p-4"
+    <!-- footer -->
+    <section class="grid grid-cols-6 bg-base-200 p-4">
+      <div class="my-auto">
+        <img
+          src="./assets/logo.png"
+          class="max-h-[90px] ml-[15px] scale-300 md:scale-100 lg:ml-[-30px] md:ml-[-30px] md:my-[-10px]"
+          alt="redeuce-logo"
+        />
+      </div>
+
+      <div
+        class="col-span-4 text-center my-auto text-xs md:text-md md:flex md:justify-center md:gap-2"
       >
-        <aside class="grid-flow-col items-center">
-          <img
-            src="./assets/logo.png"
-            class="md:block hidden max-h-[90px] ml-[-70px] my-[-10px]"
-            alt="redeuce-logo"
-          />
-          <div class="my-auto">
-            <p class="font-semibold">
-              Copyright © 2025 - All right reserved
-            </p>
-          </div>
-        </aside>
-        <nav
-          class="grid-flow-col gap-4 md:place-self-center md:justify-self-end"
+        <p class="font-semibold">Copyright © 2025</p>
+        <p class="font-semibold">-</p>
+        <p class="font-semibold">All rights reserved.</p>
+      </div>
+
+      <div class="my-auto mx-auto">
+        <a
+          href="https://www.instagram.com/redeuce_?igsh=MWdoOGhrN20zOGx3cA%3D%3D"
+          target="_blank"
+          class="font-semibold"
         >
-          <a
-            href="https://www.instagram.com/redeuce_?igsh=MWdoOGhrN20zOGx3cA%3D%3D"
-            target="_blank"
-            class="font-semibold"
-          >
-            <i class="text-lg fa-brands fa-instagram my-auto font-semibold"></i>
-          </a>
-        </nav>
-      </footer>
+          <i class="text-lg fa-brands fa-instagram my-auto font-semibold"></i>
+          <span class="hidden md:inline">Instagram</span>
+        </a>
+      </div>
     </section>
 
     <script src="script.js"></script>

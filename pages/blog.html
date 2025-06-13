@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReDeuce Blog List</title>
+
+    <!-- Favicon start -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon_logosc/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon_logosc/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon_logosc/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon_logosc/site.webmanifest" />
+    <!-- Favicon end -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.0.0/dist/full.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/10b608cae2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1e7d2d",
+              accent: "#00c08b",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="flex flex-col min-h-screen bg-base-200 text-base-content">
+      <!-- Navbar -->
+      <header class="sticky top-0 z-50">
+        <div id="navbar-placeholder">
+          <div class="bg-white/10 backdrop-blur-sm navbar shadow-sm">
+            <div class="navbar-start">
+              <div class="block md:hidden">
+                <div class="dropdown">
+                  <div
+                    tabindex="0"
+                    role="button"
+                    class="btn btn-ghost btn-circle"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h7"
+                      />
+                    </svg>
+                  </div>
+                  <ul
+                    tabindex="0"
+                    class="menu menu-md dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                  >
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="../index.html#buy">Buy</a></li>
+                  </ul>
+                </div>
+              </div>
+              <img
+                src="../assets/logo.png"
+                class="md:block hidden max-h-[90px] ml-[-70px] my-[-10px]"
+                alt="redeuce-logo"
+              />
+            </div>
+            <div class="navbar-center">
+              <img
+                src="../assets/logo.png"
+                class="block md:hidden max-h-[90px] my-[-10px]"
+                alt="redeuce-logo"
+              />
+            </div>
+            <div class="navbar-end">
+              <div class="hidden md:block">
+                <ul class="menu menu-horizontal p-0">
+                  <li>
+                    <a
+                      href="../index.html"
+                      class="text-lg font-semibold text-[#1e7d2d]"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./blog.html"
+                      class="text-lg font-semibold text-[#1e7d2d]"
+                      >Blog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../index.html#buy"
+                      class="text-lg font-semibold text-[#1e7d2d]"
+                      >Buy</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Header -->
+      <header class="max-w-4xl mx-auto text-center py-12 px-4">
+        <h1 class="text-4xl font-bold text-primary mb-4">
+          Sustainability Insights
+        </h1>
+        <p class="text-gray-600 text-lg">
+          Learn more about how ReDeuce is changing the game — sustainably.
+        </p>
+      </header>
+
+      <!-- Blog List -->
+      <ul class="flex-1 list bg-base-100 shadow-md">
+        <div id="blog-list"></div>
+      </ul>
+
+      <!-- Footer -->
+      <section class="grid grid-cols-6 bg-base-200 p-4">
+        <div class="my-auto">
+          <img
+            src="../assets/logo.png"
+            class="max-h-[90px] ml-[15px] scale-300 md:scale-100 lg:ml-[-30px] md:ml-[-30px] md:my-[-10px]"
+            alt="redeuce-logo"
+          />
+        </div>
+
+        <div
+          class="col-span-4 text-center my-auto text-xs md:text-md md:flex md:justify-center md:gap-2"
+        >
+          <p class="font-semibold">Copyright © 2025</p>
+          <p class="font-semibold">-</p>
+          <p class="font-semibold">All rights reserved.</p>
+        </div>
+
+        <div class="my-auto mx-auto">
+          <a
+            href="https://www.instagram.com/redeuce_?igsh=MWdoOGhrN20zOGx3cA%3D%3D"
+            target="_blank"
+            class="font-semibold"
+          >
+            <i class="text-lg fa-brands fa-instagram my-auto font-semibold"></i>
+            <span class="hidden md:inline">Instagram</span>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const blogData = [
+        {
+          title: "Reusable Core",
+          author: "Redeuce team",
+          date: "6/3/2025",
+          views: "824k+",
+          description:
+            "Designed to last over 3x longer than standard tennis balls, our reusable core helps athletes reduce waste without compromising bounce or durability. Built from high-resilience materials, it holds pressure longer and stays match-ready even after repeated play.",
+          link: "./reusableCore.html",
+        },
+        {
+          title: "Eco Felt Wrap",
+          author: "Redeuce team",
+          date: "6/14/2025",
+          views: "512k+",
+          description:
+            "Biodegradable felt sleeves that can be replaced, not wasted. Our eco-felt system allows players to refresh worn balls easily while ensuring all discarded material decomposes naturally — a major step forward for circular tennis gear.",
+        },
+        {
+          title: "Pro-Level Bounce",
+          author: "Redeuce team",
+          date: "6/7/2025",
+          views: "690k+",
+          description:
+            "Tested by professional athletes and engineered for precision, ReDeuce balls deliver court-to-court consistency. Whether you're training or competing, you’ll experience reliable bounce, control, and feel — without the environmental cost.",
+        },
+        {
+          title: "Circular Production Model",
+          author: "Redeuce team",
+          date: "6/11/2025",
+          views: "317k+",
+          description:
+            "How ReDeuce reclaims and remanufactures old tennis balls to close the loop and minimize waste. Our system accepts used balls from clubs and players, then reprocesses materials to build new ones — making tennis sustainable at scale.",
+        },
+        {
+          title: "Sustainable Tennis for Schools",
+          author: "Redeuce team",
+          date: "6/16/2025",
+          views: "471k+",
+          description:
+            "Offering eco-friendly, affordable alternatives for clubs and schools without compromising quality. ReDeuce helps institutions align with green policies, save costs, and inspire the next generation of players to care about the planet.",
+        },
+      ];
+
+      function renderBlogList() {
+        const container = document.getElementById("blog-list");
+        container.innerHTML = ""; // 清空旧内容
+
+        const header = document.createElement("li");
+        header.className = "p-4 pb-2 text-xs opacity-60 tracking-wide";
+        header.textContent = "Most viewed this week";
+        container.appendChild(header);
+
+        blogData.forEach((blog) => {
+          const li = document.createElement("li");
+          li.className = "grid grid-cols-12 px-16 py-4";
+
+          li.innerHTML = `
+        <div class="col-span-11">
+          <div>
+            <div class="text-primary font-semibold text-xl">${blog.title}</div>
+            <div class="uppercase font-semibold opacity-60">${blog.author}</div>
+            <div class="uppercase opacity-50">${blog.date}</div>
+            <div class="uppercase font-semibold opacity-60">${
+              blog.views
+            } views</div>
+          </div>
+          <p class="list-col-wrap">${blog.description}</p>
+        </div>
+        <div class="col-span-1 flex justify-center my-auto gap-1">
+            <a href="${blog.link || "#"}">
+                 <button class="btn btn-square btn-ghost">
+            <i class="fa-solid fa-eye"></i>
+          </button>
+            </a>
+         
+          <button class="btn btn-square btn-ghost like-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+      `;
+
+          container.appendChild(li);
+        });
+
+        // 为所有点赞按钮添加 toggle 效果
+        document.querySelectorAll(".like-btn").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const icon = btn.querySelector("i");
+            icon.classList.toggle("fa-regular");
+            icon.classList.toggle("fa-solid");
+          });
+        });
+      }
+
+      // 初次渲染
+      renderBlogList();
+    </script>
+  </body>
+</html>
