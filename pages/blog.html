@@ -190,6 +190,7 @@
           author: "Redeuce team",
           date: "6/12/2025",
           views: "824k+",
+          hidden: '',
           description:
             "Designed to last over 3x longer than standard tennis balls, our reusable core helps athletes reduce waste without compromising bounce or durability. Built from high-resilience materials, it holds pressure longer and stays match-ready even after repeated play.",
           link: "./reusableCore.html",
@@ -199,6 +200,7 @@
           author: "Redeuce team",
           date: "6/14/2025",
           views: "512k+",
+          hidden: 'hidden',
           description:
             "Biodegradable felt sleeves that can be replaced, not wasted. Our eco-felt system allows players to refresh worn balls easily while ensuring all discarded material decomposes naturally — a major step forward for circular tennis gear.",
         },
@@ -207,6 +209,7 @@
           author: "Redeuce team",
           date: "6/7/2025",
           views: "690k+",
+          hidden: 'hidden',
           description:
             "Tested by professional athletes and engineered for precision, ReDeuce balls deliver court-to-court consistency. Whether you're training or competing, you’ll experience reliable bounce, control, and feel — without the environmental cost.",
         },
@@ -215,6 +218,7 @@
           author: "Redeuce team",
           date: "6/11/2025",
           views: "317k+",
+          hidden: 'hidden',
           description:
             "How ReDeuce reclaims and remanufactures old tennis balls to close the loop and minimize waste. Our system accepts used balls from clubs and players, then reprocesses materials to build new ones — making tennis sustainable at scale.",
         },
@@ -223,6 +227,7 @@
           author: "Redeuce team",
           date: "6/16/2025",
           views: "471k+",
+          hidden: 'hidden',
           description:
             "Offering eco-friendly, affordable alternatives for clubs and schools without compromising quality. ReDeuce helps institutions align with green policies, save costs, and inspire the next generation of players to care about the planet.",
         },
@@ -256,7 +261,7 @@
         <div class="col-span-1 flex justify-center my-auto gap-1">
             <a href="${blog.link || "#"}">
                  <button class="btn btn-square btn-ghost">
-            <i class="fa-solid fa-eye"></i>
+            <i class="fa-solid fa-eye ${blog.hidden || ""}"></i>
           </button>
             </a>
          
